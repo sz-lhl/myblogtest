@@ -1,0 +1,2 @@
+select b.bmmc,a.dbrq ,c.xm,d.gwmc,to_date(xgsj,'yyyy-MM-dd HH24:mi:ss')-to_date(sgsj,'yyyy-MM-dd HH24:mi:ss') 
+from zz_yw_t_czyztb a, bj_yw_t_bmdm b,bj_yw_t_czyzl c, c,bj_yw_t_gwzl d where a.bmdm = b.bmdm and a.czydm = c.czydm and a.gwmc = d.gwmc and dbrq >='20180101' and dbrq <= '20180331' order by a.bmdm
